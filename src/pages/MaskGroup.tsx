@@ -4,11 +4,11 @@ import DoctorSection from "../components/DoctorSection";
 import MarketComparisonContainer from "../components/market-comparison-container";
 import TelehealthContainer from "../components/telehealth-container";
 import styles from "./MaskGroup.module.css";
+import Container from '@mui/material/Container';
+
 const MaskGroup: FunctionComponent = () => {
   return (
-    <form className={styles.maskGroup}>
-      <div className={styles.website}>
-        <div className={styles.frameParent}>
+    <Container maxWidth="xl">
           <ProductSearchSection />
           <DoctorSection />
           <MarketComparisonContainer
@@ -225,9 +225,7 @@ const MaskGroup: FunctionComponent = () => {
             publixAllRightsReservedDisplay="inline-block"
             privacyPolicyDisclaimerTeDisplay="inline-block"
           />
-        </div>
-      </div>
-    </form>
+    </Container>
   );
 };
 

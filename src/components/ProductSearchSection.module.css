@@ -43,11 +43,11 @@
   height: 16px;
 }
 .divnavigationBarSecondary {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   background-color: #004c2a;
-  width: 1920px;
+  width: 100%;
   height: 32px;
 }
 .publixBrandmarksvgIcon {
@@ -91,7 +91,9 @@
   flex-shrink: 0;
 }
 .formpSearchInput {
-  position: absolute;
+  height: 3rem;
+  width: 18rem;
+  /* position: absolute; */
   top: 0;
   left: 0;
   border-radius: 4px;
@@ -206,7 +208,7 @@
   color: #fff;
 }
 .ulaccount {
-  position: absolute;
+  /* position: absolute; */
   top: calc(50% - 24px);
   left: 1302.26px;
   display: flex;
@@ -218,10 +220,11 @@
   color: #004c2a;
 }
 .divnavigationSection {
-  position: absolute;
+  display: flex;
+  justify-content: space-between;
   top: 0;
   left: 0;
-  width: 1763.2px;
+  width: 100%;
   height: 50px;
 }
 .frame4,
@@ -394,7 +397,7 @@
   background-color: #fff;
   border-bottom: 1px solid #e6e6e6;
   box-sizing: border-box;
-  width: 1920px;
+  width: 100%;
   height: 159px;
   z-index: 0;
   font-family: Inter;
@@ -443,8 +446,7 @@
   color: #007737;
 }
 .frameContainer,
-.frameGroup,
-.frameWrapper {
+.frameGroup{
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -460,34 +462,37 @@
 .frameGroup,
 .frameWrapper {
   flex-direction: column;
+
 }
 .frameGroup {
   gap: 50px;
 }
-.frameWrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
+.frameWrapper  {
+  display: flex;
+  flex-direction: row;
 }
 .image1Icon {
-  position: absolute;
+  /* position: absolute; */
   top: 65px;
   left: 864.11px;
   border-radius: 4.86px;
-  width: 830.48px;
+  width: 100%;
   height: 506px;
   object-fit: cover;
 }
 .frameParent {
-  position: absolute;
-  margin: 0 !important;
-  top: 236px;
-  left: 130.89px;
-  width: 1694.59px;
+  display: block;
+  width: 100%;
   height: 571px;
-  z-index: 1;
   font-size: 64px;
   color: #1d2f28;
+}
+.leftVerticalFrame{
+  display: flex;
+  flex-direction: column;
+}
+.rightVerticalFrame{
+  display: flex;
 }
 .chatmdsSavingCardYellow1 {
   position: absolute;
@@ -574,7 +579,7 @@
 }
 .groupWrapper,
 .rectangleParent {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 281.12px;
@@ -586,22 +591,24 @@
   border-radius: 13.15px;
   overflow: hidden;
 }
-.chatmdsSavingCardYellow1Parent,
-.groupDiv {
-  position: absolute;
-  top: 0;
-  left: 0;
+.chatmdsSavingCardYellow1Parent{
+  
   width: 413px;
   height: 237px;
 }
 .groupDiv {
-  margin: 0 !important;
+  margin-top: 2rem;
+  display:flex;
+  flex-direction: row-reverse;
+  width: 413px;
+  height: 237px;
   top: 570px;
   left: 82.89px;
-  width: 759px;
+  width: 683px;
   z-index: 2;
   font-size: 13.12px;
 }
+
 .publixHeaderParent {
   height: 890px;
   display: flex;

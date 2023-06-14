@@ -10,7 +10,7 @@
   font-family: Inter;
 }
 .theDoctorWillSeeYouNowParent {
-  width: 1650px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -178,11 +178,13 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .prototypeUserSurvey {
   border-radius: 30px;
   background-color: #d5e6cf;
-  width: 1760px;
+  width: 100%;
   padding: 40px 40px 50px;
   box-sizing: border-box;
   align-items: flex-start;
@@ -198,4 +200,6 @@
   font-size: 40px;
   color: #1d2f28;
   font-family: Lasiver-Medium;
+  overflow-x: auto;
+  overflow-y: hidden;
 }

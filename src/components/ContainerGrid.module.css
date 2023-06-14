@@ -52,7 +52,6 @@
   height: 20px;
 }
 .frameParent {
-  position: absolute;
   top: 562px;
   left: 432.78px;
   display: flex;
@@ -64,4 +63,6 @@
   font-size: 20px;
   color: #1d2f28;
   font-family: Lasiver-Medium;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
