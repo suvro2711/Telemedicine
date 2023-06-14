@@ -1,0 +1,95 @@
+.publixBrandmarksvgIcon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.spacerChild {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.spacer {
+  flex: 1;
+  position: relative;
+  height: 50px;
+}
+.telehealth {
+  align-self: stretch;
+  position: relative;
+  line-height: 24px;
+}
+.footerMenu,
+.publixBrandmarksvgParent,
+.telehealthParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.telehealthParent {
+  width: 250px;
+  flex-direction: column;
+  gap: 24px;
+}
+.footerMenu,
+.publixBrandmarksvgParent {
+  flex-direction: row;
+  gap: 80px;
+}
+.publixBrandmarksvgParent {
+  align-self: stretch;
+  gap: 10px;
+}
+.spacer1 {
+  flex: 1;
+}
+.footerChild,
+.spacer1,
+.spacer2 {
+  align-self: stretch;
+  position: relative;
+}
+.footerChild {
+  max-width: 100%;
+  overflow: hidden;
+  height: 1px;
+  flex-shrink: 0;
+  opacity: 0.3;
+}
+.spacer2 {
+  height: 20px;
+}
+.publixAllRights {
+  position: relative;
+  line-height: 120%;
+}
+.publixAllRightsReservedParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  font-family: "Helvetica Neue LT Pro";
+}
+.footer {
+  background-color: #f3f3f3;
+  width: 1920px;
+  height: 550px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 130px 80px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left;
+  font-size: 20px;
+  color: #1d2f28;
+  font-family: Lasiver-Medium;
+}

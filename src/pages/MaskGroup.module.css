@@ -1,0 +1,331 @@
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.ourPatientsLove {
+  position: relative;
+  font-size: 40px;
+  line-height: 46px;
+  font-family: Lasiver-Medium;
+  color: #1d2f28;
+  text-align: left;
+  display: inline-block;
+  width: 1650px;
+}
+.frameChild {
+  position: relative;
+  border-radius: 1px;
+  width: 19px;
+  height: 19px;
+}
+.div {
+  position: relative;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: Lasiver-Medium;
+  color: #1d2f28;
+  text-align: left;
+}
+.starParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.iHadA {
+  align-self: stretch;
+  position: relative;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Inter;
+  color: #1d2f28;
+  text-align: left;
+}
+.frameItem {
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.jennaR {
+  position: relative;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Inter;
+  color: #1d2f28;
+  text-align: left;
+  display: inline-block;
+  width: 398px;
+  flex-shrink: 0;
+}
+.ellipseParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.frameContainer,
+.frameDiv {
+  display: flex;
+  align-items: flex-start;
+}
+.frameDiv {
+  border-radius: 30px;
+  background-color: #fff;
+  width: 398px;
+  flex-direction: column;
+  padding: 30px;
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 30px;
+}
+.frameContainer {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 772px);
+  width: 1544px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.groupChild,
+.groupChild1,
+.groupInner,
+.groupItem,
+.rectangleDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 49px;
+  background-color: #e8efe5;
+  width: 140px;
+  height: 20px;
+}
+.groupChild1,
+.groupInner,
+.groupItem,
+.rectangleDiv {
+  left: 154px;
+  background-color: #fff;
+  width: 20px;
+}
+.groupChild1,
+.groupInner,
+.rectangleDiv {
+  left: 188px;
+}
+.groupChild1,
+.rectangleDiv {
+  left: 222px;
+}
+.groupChild1 {
+  left: 256px;
+}
+.rectangleParent {
+  position: absolute;
+  top: 369px;
+  left: 634px;
+  width: 276px;
+  height: 20px;
+}
+.frameGroup {
+  position: relative;
+  width: 1544px;
+  height: 389px;
+}
+.groupWrapper,
+.ourPatientsLoveUsParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.groupWrapper {
+  border-radius: 30px;
+  background-color: #007737;
+  padding: 120px 104px 60px;
+  align-items: flex-start;
+}
+.ourPatientsLoveUsParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  gap: 50px;
+}
+.frameWrapper {
+  position: relative;
+  width: 1752px;
+  height: 665px;
+}
+.connectWithThe {
+  position: relative;
+  font-size: 40px;
+  line-height: 46px;
+  font-family: Lasiver-Medium;
+  color: #1d2f28;
+  text-align: left;
+  display: inline-block;
+  width: 1089px;
+  flex-shrink: 0;
+}
+.connectWithTheTypeOfProviWrapper {
+  width: 1650px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.layer1Icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.treatmentForAllergies,
+.urgentCare {
+  align-self: stretch;
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: Lasiver-Medium;
+  color: #1d2f28;
+  text-align: left;
+}
+.treatmentForAllergies {
+  flex: 1;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Inter;
+}
+.bookNow {
+  position: relative;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: Lasiver-Medium;
+  color: #fff;
+  text-align: center;
+}
+.bookNowWrapper {
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: #007737;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+.layer1Parent,
+.treatmentForAllergiesEarIParent {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+.layer1Parent {
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 30px;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.frameChild2,
+.groupIcon {
+  position: relative;
+  width: 24.45px;
+  height: 31.75px;
+}
+.frameChild2 {
+  width: 23.87px;
+  height: 33.28px;
+}
+.womensHealthParent {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.frameChild3 {
+  position: relative;
+  width: 23.87px;
+  height: 33.95px;
+}
+.mensHealthParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+.groupParent1 {
+  flex: 1;
+  border-radius: 30px;
+  background-color: #fff;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+}
+.frameParent4,
+.frameWrapper1,
+.groupParent1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent4 {
+  width: 1544px;
+  flex-direction: row;
+  gap: 20px;
+}
+.frameWrapper1 {
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  flex-direction: column;
+  padding: 120px 104px;
+}
+.groupDiv {
+  position: relative;
+  width: 1752px;
+  height: 766.45px;
+}
+.frameParent,
+.maskGroup,
+.website {
+  display: flex;
+  justify-content: flex-start;
+}
+.frameParent {
+  flex-direction: column;
+  align-items: center;
+  gap: 130px;
+}
+.maskGroup,
+.website {
+  flex-direction: row;
+  align-items: flex-start;
+}
+.website {
+  background-color: #fff;
+  overflow: hidden;
+}
+.maskGroup {
+  position: relative;
+  width: 100%;
+}

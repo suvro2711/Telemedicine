@@ -1,0 +1,207 @@
+.publixVsOthers {
+  position: relative;
+  line-height: 56px;
+  display: inline-block;
+  width: 583px;
+}
+.publixVsOthersWrapper {
+  width: 479px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.dolorEgestasUllamcorper {
+  align-self: stretch;
+  position: relative;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Inter;
+  display: inline-block;
+  height: 202px;
+  flex-shrink: 0;
+}
+.frameGroup {
+  width: 479px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.others {
+  position: relative;
+  line-height: 28px;
+}
+.othersWrapper {
+  align-self: stretch;
+  border-radius: 30px 30px 0 0;
+  background-color: #025529;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.span {
+  line-height: 25px;
+}
+.span1 {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: Lasiver-Medium;
+}
+.div,
+.frameChild {
+  align-self: stretch;
+  position: relative;
+}
+.frameChild {
+  max-width: 100%;
+  overflow: hidden;
+  height: 1px;
+  flex-shrink: 0;
+}
+.frameItem {
+  position: relative;
+  border-radius: 1px;
+  width: 19px;
+  height: 19px;
+}
+.div1 {
+  position: relative;
+  line-height: 24px;
+}
+.frameWrapper1,
+.starParent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.starParent {
+  flex-direction: row;
+  gap: 3px;
+}
+.frameWrapper1 {
+  align-self: stretch;
+  flex-direction: column;
+  text-align: left;
+  font-size: 20px;
+  font-family: Lasiver-Medium;
+}
+.appointmentNeeded {
+  margin: 0;
+}
+.appointmentNeededTakesHourContainer {
+  align-self: stretch;
+  position: relative;
+  line-height: 25px;
+  font-weight: 500;
+}
+.controlPointBlack24dpIcon {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.controlPointBlack24dpWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.parent {
+  align-self: stretch;
+  padding: 30px;
+  justify-content: flex-start;
+  gap: 20px;
+  font-size: 18px;
+  color: #1d2f28;
+  font-family: Inter;
+}
+.frameDiv,
+.frameWrapper,
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.frameDiv {
+  align-self: stretch;
+  justify-content: center;
+  z-index: 0;
+}
+.frameWrapper {
+  position: absolute;
+  top: 0;
+  left: 638px;
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  width: 292.8px;
+  justify-content: flex-start;
+}
+.publixWrapper {
+  align-self: stretch;
+  border-radius: 30px 30px 0 0;
+  background-color: #007737;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.frameWrapper2,
+.visitFeeParent {
+  position: absolute;
+  top: 0;
+  left: 314px;
+  border-radius: 30px 30px 30px 0;
+  background-color: #f3f3f3;
+  width: 292.8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.visitFeeParent {
+  top: 70px;
+  left: 0;
+  border-radius: 20px 0 0 20px;
+  background-color: #1d2f28;
+  width: 314px;
+  height: 440px;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  text-align: left;
+  font-size: 18px;
+  font-family: Inter;
+}
+.groupDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 606.8px;
+  height: 510px;
+}
+.frameContainer {
+  position: relative;
+  width: 930.8px;
+  height: 510px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+.frameParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 181px;
+  text-align: left;
+  font-size: 48px;
+  color: #1d2f28;
+  font-family: Lasiver-Medium;
+}
