@@ -1,6 +1,7 @@
 import { FunctionComponent, memo, useMemo } from "react";
 import CSS, { Property } from "csstype";
 import styles from "./TelehealthContainer.module.css";
+import LogoLink from "./common/LogoLink/LogoLink";
 
 type TelehealthContainerType = {
   publixBrandmarksvg?: string;
@@ -87,11 +88,7 @@ const TelehealthContainer: FunctionComponent<TelehealthContainerType> = memo(
     return (
       <div className={styles.footer}>
         <div className={styles.publixBrandmarksvgParent}>
-          <img
-            className={styles.publixBrandmarksvgIcon}
-            alt=""
-            src={publixBrandmarksvg}
-          />
+          <LogoLink />
           <div className={styles.spacer}>
             <div className={styles.spacerChild} />
           </div>

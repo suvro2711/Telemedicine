@@ -2,6 +2,10 @@ import { FunctionComponent, memo, useCallback } from "react";
 import ContainerGrid from "./ContainerGrid";
 import styles from "./ProductSearchSection.module.css";
 import { Container } from "@mui/material";
+import LogoLink from "./common/LogoLink/LogoLink";
+
+// import mainLogo from "../resources/svg/mainlogo.svg"
+
 const ProductSearchSection: FunctionComponent = memo(() => {
   const onFrameContainer2Click = useCallback(() => {
     const anchor = document.querySelector("[data-scroll-to='frameContainer']");
@@ -25,11 +29,7 @@ const ProductSearchSection: FunctionComponent = memo(() => {
             </div>
           </div>
           <div className={styles.divnavigationBarMain}>
-            <img
-              className={styles.publixBrandmarksvgIcon}
-              alt=""
-              src="/publix-brandmarksvg5.svg"
-            />
+            <LogoLink />
             <div className={styles.divnavigation}>
               <div className={styles.divnavigationSection}>
                 <div className={styles.formpSearchInput}>
