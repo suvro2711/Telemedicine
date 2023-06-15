@@ -33,13 +33,7 @@ const ProductSearchSection: FunctionComponent = memo(() => {
             <div className={styles.divnavigation}>
               <div className={styles.divnavigationSection}>
                 <div className={styles.formpSearchInput}>
-                  <div className={styles.searchProductsAndMore}>
-                    <div className={styles.divplaceholder}>
-                      <div className={styles.searchProductsAnd}>
-                        Search products and more
-                      </div>
-                    </div>
-                  </div>
+                  <input className={styles.searchProductsAndMore} placeholder="Search products and more"/>
                   <img className={styles.svgIcon} alt="" src="/svg.svg" />
                 </div>
                 <div className={styles.ulaccount}>

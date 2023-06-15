@@ -82,7 +82,10 @@
 }
 .searchProductsAndMore {
   flex: 1;
-  height: 24px;
+  height: 100%;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
 }
 .svgIcon {
   border-radius: 4px;
@@ -91,7 +94,7 @@
   flex-shrink: 0;
 }
 .formpSearchInput {
-  height: 3rem;
+  height: 100%;
   width: 18rem;
   /* position: absolute; */
   top: 0;
@@ -101,7 +104,8 @@
   border: 1px solid #999;
   display: flex;
   flex-direction: row;
-  padding: 13px 13.010009765625px 13px 17px;
+  padding-right: 1rem;
+  /* padding: 13px 13.010009765625px 13px 17px; */
   align-items: center;
   justify-content: flex-start;
   gap: 11.99px;
