@@ -5,10 +5,12 @@ import MarketComparisonContainer from "../components/market-comparison-container
 import TelehealthContainer from "../components/telehealth-container";
 import styles from "./MaskGroup.module.css";
 import Container from '@mui/material/Container';
+import { useCommonStyles } from "../MaterialUIStyles";
 
 const MaskGroup: FunctionComponent = () => {
+  const commonStyle = useCommonStyles()
   return (
-    <Container maxWidth="xl">
+    <Container className={commonStyle.customContainer}>
           <ProductSearchSection />
           <DoctorSection />
           <MarketComparisonContainer
