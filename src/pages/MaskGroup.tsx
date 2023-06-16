@@ -10,9 +10,9 @@ import { useCommonStyles } from "../MaterialUIStyles";
 const MaskGroup: FunctionComponent = () => {
   const commonStyle = useCommonStyles()
   return (
-    <Container className={commonStyle.customContainer}>
+    <div className={styles.subWapper}>
           <ProductSearchSection />
-          <DoctorSection />
+           <DoctorSection />
           <MarketComparisonContainer
             dolorEgestasUllamcorperNi="Don’t wait weeks for an appointment. Our doctors, therapists, and specialists can help you with the flu, infections, anxiety, stress, skin conditions, and provide advice on serious medical conditions. No matter what you're facing, we’re available from wherever you are by phone, video, or app."
             star1="/star-1110.svg"
@@ -38,7 +38,7 @@ const MaskGroup: FunctionComponent = () => {
             refundableDisplay="inline-block"
             mDCostDisplay="inline-block"
           />
-          <div className={styles.frameWrapper}>
+           {/*<div className={styles.frameWrapper}>
             <div className={styles.ourPatientsLoveUsParent}>
               <div className={styles.ourPatientsLove}>Our Patients Love Us</div>
               <div className={styles.groupWrapper}>
@@ -226,8 +226,8 @@ const MaskGroup: FunctionComponent = () => {
             urgentCareConsultDisplay="inline-block"
             publixAllRightsReservedDisplay="inline-block"
             privacyPolicyDisclaimerTeDisplay="inline-block"
-          />
-    </Container>
+          /> */}
+    </div>
   );
 };
 

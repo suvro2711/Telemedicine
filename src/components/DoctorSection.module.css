@@ -194,12 +194,12 @@
   font-family: Inter;
 }
 .frameParent {
+  width: 100%;
+  padding: 0 1.5rem;
   align-items: center;
   gap: 35px;
   text-align: left;
   font-size: 40px;
   color: #1d2f28;
   font-family: Lasiver-Medium;
-  overflow-x: auto;
-  overflow-y: hidden;
 }

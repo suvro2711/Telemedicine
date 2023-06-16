@@ -15,7 +15,6 @@ const ProductSearchSection: FunctionComponent = memo(() => {
   }, []);
 
   return (
-    <div>
       <div className={styles.publixHeaderParent}>
         <div className={styles.publixHeader}>
           <div className={styles.divnavigationBarSecondary}>
@@ -165,10 +164,7 @@ const ProductSearchSection: FunctionComponent = memo(() => {
             </div>
           </div>
         </div>
-        
       </div>
-
-    </div>
   );
 });
 

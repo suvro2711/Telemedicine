@@ -5,6 +5,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import MaskGroup from "./pages/MaskGroup";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   const action = useNavigationType();
@@ -14,7 +15,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<MaskGroup />} />
+      <Route path="/" element={<LandingPage />} />
     </Routes>
   );
 }
