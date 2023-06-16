@@ -38,7 +38,7 @@ const MaskGroup: FunctionComponent = () => {
             refundableDisplay="inline-block"
             mDCostDisplay="inline-block"
           />
-           {/*<div className={styles.frameWrapper}>
+          <div className={styles.frameWrapper}>
             <div className={styles.ourPatientsLoveUsParent}>
               <div className={styles.ourPatientsLove}>Our Patients Love Us</div>
               <div className={styles.groupWrapper}>
@@ -226,7 +226,7 @@ const MaskGroup: FunctionComponent = () => {
             urgentCareConsultDisplay="inline-block"
             publixAllRightsReservedDisplay="inline-block"
             privacyPolicyDisclaimerTeDisplay="inline-block"
-          /> */}
+          /> 
     </div>
   );
 };

@@ -22,12 +22,13 @@
   flex-shrink: 0;
 }
 .frameGroup {
-  width: 479px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 30px;
+  flex-grow: 1;
 }
 .others {
   position: relative;
@@ -191,21 +192,25 @@
 }
 .frameContainer {
   position: relative;
-  width: 930.8px;
+  width: 70%;
   height: 510px;
   text-align: center;
   font-size: 24px;
   color: #fff;
+  flex-grow: 3;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .frameParent {
+  width:100%;
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 181px;
   text-align: left;
   font-size: 48px;
   color: #1d2f28;
   font-family: Lasiver-Medium;
+  padding: 0 1rem;
 }
