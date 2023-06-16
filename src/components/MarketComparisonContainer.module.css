@@ -136,9 +136,6 @@
   z-index: 0;
 }
 .frameWrapper {
-  position: relative;
-  top: 0;
-  left: 638px;
   border-radius: 30px;
   background-color: #f3f3f3;
   width: 292.8px;
@@ -184,9 +181,6 @@
   font-family: Inter;
 }
 .groupDiv {
-  position: relative;
-  top: -515px;
-  left: 0;
   width: 606.8px;
   height: 510px;
 }
