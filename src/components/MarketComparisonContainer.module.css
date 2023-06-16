@@ -183,6 +183,7 @@
 .groupDiv {
   width: 606.8px;
   height: 510px;
+  margin-right: 1rem;
 }
 .frameContainer {
   position: relative;
@@ -206,5 +207,5 @@
   font-size: 48px;
   color: #1d2f28;
   font-family: Lasiver-Medium;
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
