@@ -201,7 +201,7 @@ const DoctorSection: FunctionComponent = memo(() => {
             />
           </div>
         </div>
-        <div className={styles.filter}>
+        {/* <div className={styles.filter}>
           <div className={styles.selectParent}>
             <div className={styles.select}>
               <div className={styles.text}>Acute Bronchitis</div>
@@ -270,7 +270,7 @@ const DoctorSection: FunctionComponent = memo(() => {
               <div className={styles.text}>UTI</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

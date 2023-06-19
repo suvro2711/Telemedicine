@@ -1,0 +1,205 @@
+.chooseFromThousands,
+.theDoctorWill {
+  align-self: stretch;
+  position: relative;
+  line-height: 46px;
+}
+.chooseFromThousands {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Inter;
+}
+.theDoctorWillSeeYouNowParent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.vectorIcon {
+  position: relative;
+  width: 32.36px;
+  height: 32.36px;
+}
+.icons,
+.variations {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.variations {
+  border-radius: 10px;
+  background-color: #007737;
+  border: 5px solid #007737;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+}
+.sexuallyTransmittedDiseases {
+  align-self: stretch;
+  position: relative;
+  line-height: 25px;
+}
+.divsc1fegqzc10 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.svgsc1kmzbw2Icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.cardAcordion {
+  align-self: stretch;
+  flex: 1;
+  border-radius: 30px;
+  background-color: #007737;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #fff;
+}
+.iconsChild {
+  position: relative;
+  width: 29px;
+  height: 33.06px;
+}
+.variations1 {
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.cardAcordion1 {
+  align-self: stretch;
+  flex: 1;
+  border-radius: 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.groupIcon,
+.iconsInner,
+.iconsItem {
+  position: relative;
+  width: 23.87px;
+  height: 33.28px;
+}
+.groupIcon,
+.iconsInner {
+  height: 33.95px;
+}
+.groupIcon {
+  width: 27.5px;
+  height: 31.01px;
+}
+.iconsChild1,
+.iconsChild2 {
+  position: relative;
+  width: 28.25px;
+  height: 35.23px;
+}
+.iconsChild2 {
+  width: 24.45px;
+  height: 31.75px;
+}
+.iconsChild3,
+.iconsChild4 {
+  position: relative;
+  width: 28.71px;
+  height: 26.5px;
+}
+.iconsChild4 {
+  width: 18.75px;
+  height: 32px;
+}
+.cardAcordionParent {
+  align-self: stretch;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.text {
+  position: relative;
+  line-height: 25px;
+}
+.filter,
+.select,
+.selectParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.select {
+  align-self: stretch;
+  border-radius: 61px;
+  background-color: #f2f6ee;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  flex-direction: row;
+  padding: 10px 16px;
+  align-items: center;
+}
+.filter,
+.selectParent {
+  align-items: flex-start;
+}
+.selectParent {
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+}
+.filter {
+  align-self: stretch;
+  flex-direction: row;
+  gap: 20px;
+}
+.frameParent,
+.prototypeUserSurvey {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.prototypeUserSurvey {
+  border-radius: 30px;
+  background-color: #d5e6cf;
+  width: 100%;
+  padding: 40px 40px 50px;
+  box-sizing: border-box;
+  align-items: flex-start;
+  gap: 40px;
+  font-size: 18px;
+  color: #404042;
+  font-family: Inter;
+}
+.frameParent {
+  width: 100%;
+  padding: 0 3rem;
+  align-items: center;
+  gap: 35px;
+  text-align: left;
+  font-size: 40px;
+  color: #1d2f28;
+  font-family: Lasiver-Medium;
+}

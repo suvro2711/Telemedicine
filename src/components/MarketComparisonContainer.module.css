@@ -5,6 +5,7 @@
   width: 583px;
 }
 .publixVsOthersWrapper {
+
   width: 479px;
   display: flex;
   flex-direction: column;
@@ -198,7 +199,7 @@
 }
 .frameParent {
   width:100%;
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;

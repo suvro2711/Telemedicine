@@ -1,5 +1,5 @@
 .landingPageWrapper {
-  width: 98vw;
+  width: 97vw;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -32,6 +32,7 @@
   }
 }
 .ourPatientsLove {
+  margin-top: 4rem;
   position: relative;
   font-size: 40px;
   line-height: 46px;
@@ -172,7 +173,7 @@
   justify-content: flex-start;
 }
 .groupWrapper {
-  border-radius: 30px;
+  border-radius: 2rem;
   background-color: #007737;
   padding: 120px 104px 60px;
   align-items: flex-start;
@@ -192,6 +193,7 @@
     overflow-y: hidden;
 }
 .connectWithThe {
+  margin-top: 2rem;
   position: relative;
   font-size: 40px;
   line-height: 46px;

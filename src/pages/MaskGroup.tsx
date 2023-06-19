@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import ProductSearchSection from "../components/ProductSearchSection";
-import DoctorSection from "../components/DoctorSection";
+import DoctorSection from "../components/DoctorsAppointment/DoctorSection";
 import MarketComparisonContainer from "../components/market-comparison-container";
 import TelehealthContainer from "../components/telehealth-container";
 import styles from "./MaskGroup.module.css";
