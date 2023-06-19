@@ -93,6 +93,7 @@ const ProductSearchSection: FunctionComponent = memo(() => {
             </div>
           </div>
         </div>
+        <hr className={styles.hrDivider} />
         <div className={styles.frameParent}>
 
           <div className={styles.frameWrapper}>
@@ -123,10 +124,10 @@ const ProductSearchSection: FunctionComponent = memo(() => {
               </div>
               <div className={styles.groupDiv}>
                 <ContainerGrid
-                  svgsc1jw854g0="/svgsc1jw854g026.svg"
-                  layer1="/layer-111.svg"
-                  layer11="/layer-121.svg"
-                  star1="/star-126.svg"
+                  svgsc1jw854g0="/Icons/steth.svg"
+                  layer1="/Icons/dollar.svg"
+                  layer11="/Icons/thum.svg"
+                  star1="/Icons/star.svg"
                   propTop="15px"
                   propLeft="392px"
                   propDisplay="unset"
@@ -138,13 +139,18 @@ const ProductSearchSection: FunctionComponent = memo(() => {
                   <div className={styles.groupWrapper}>
                     <div className={styles.rectangleParent}>
                       <div className={styles.groupChild} />
-                      <div className={styles.groupItem} />
-                      <div className={styles.memberId021916}>Member ID: 021916</div>
-                      <div className={styles.bin021916}>BIN: 021916</div>
-                      <div className={styles.pcn021916}>PCN: 021916</div>
-                      <div className={styles.group021916}>Group: 021916</div>
-                      <div className={styles.save}>Save</div>
-                      <div className={styles.div}>87%</div>
+                      <div className={styles.groupItem}>
+                        <div className={styles.cardInfo}>
+                          <div className={styles.memberId021916}>Member ID: 021916</div>
+                          <div className={styles.bin021916}>BIN: 021916</div>
+                          <div className={styles.pcn021916}>PCN: 021916</div>
+                          <div className={styles.group021916}>Group: 021916</div>
+                        </div>
+                        <div className={styles.cardDiscount}>
+                          <div>Save</div>
+                          <div>87%</div>
+                        </div>
+                      </div>
                       <img
                         className={styles.publixBrandmarksvgIcon1}
                         alt=""
@@ -157,6 +163,7 @@ const ProductSearchSection: FunctionComponent = memo(() => {
                     </div>
                   </div>
                 </div>
+                <img className={styles.cardShadow} src="/cardShadow.PNG" />
               </div>
             </div>
             <div className={styles.rightVerticalFrame}>

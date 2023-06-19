@@ -64,6 +64,9 @@ const ContainerGrid: FunctionComponent<ContainerGridType> = memo(
     return (
       <div className={styles.frameParent}>
         <div className={styles.svgsc1jw854g0Parent}>
+          <div className={styles.layer1Wrapper}>
+            <img className={styles.layer1Icon1} alt="" src={svgsc1jw854g0} />
+          </div>
           <div
             className={styles.thousandsOfDoctorsContainer}
             style={thousandsOfDoctorsContainerStyle}

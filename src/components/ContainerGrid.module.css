@@ -9,7 +9,7 @@
   line-height: 24px;
 }
 .ofDoctorsAnd {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 25px;
   font-family: Inter;
 }
@@ -52,6 +52,7 @@
   height: 20px;
 }
 .frameParent {
+  width: 23rem;
   margin-top: 1rem;
   top: 562px;
   left: 432.78px;
@@ -59,9 +60,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 15px;
+  gap: 5px;
   text-align: left;
-  font-size: 20px;
+  font-size: 15px;
   color: #1d2f28;
   font-family: Lasiver-Medium;
   overflow-x: auto;

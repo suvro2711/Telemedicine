@@ -9,3 +9,9 @@ body {
   margin: 0;
   line-height: normal;
 }
+
+@font-face {
+  font-family: 'Lasiver-Medium';
+  src: url('./Lasiver Medium.woff.ttf') format('truetype');
+  /* Add additional font properties here, like font-weight or font-style */
+}

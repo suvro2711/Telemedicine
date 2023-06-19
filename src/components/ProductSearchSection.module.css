@@ -43,7 +43,6 @@
   height: 16px;
 }
 .divnavigationBarSecondary {
-  /* position: absolute; */
   top: 0;
   left: 0;
   background-color: #004c2a;
@@ -94,9 +93,9 @@
   flex-shrink: 0;
 }
 .formpSearchInput {
-  height: 100%;
-  width: 18rem;
-  /* position: absolute; */
+  height: 93%;
+  width: 38rem;
+  margin-top: 3px;
   top: 0;
   left: 0;
   border-radius: 4px;
@@ -110,10 +109,17 @@
   justify-content: flex-start;
   gap: 11.99px;
 }
+.hrDivider{
+    position: relative;
+    width: 100%;
+    opacity: 0.3;
+    top: -44px;
+}
+
 .shoppingList {
   position: absolute;
   top: 12px;
-  left: 52px;
+  left: 29px;
   letter-spacing: -0.01px;
   line-height: 24px;
   font-weight: 600;
@@ -140,7 +146,7 @@
   position: relative;
   border-radius: 8px;
   background-color: #fff;
-  width: 169.94px;
+  width: 131.94px;
   height: 48px;
 }
 .frame1,
@@ -150,7 +156,7 @@
 }
 .svgIcon2 {
   top: 12px;
-  left: calc(50% - 34.51px);
+  left: calc(50% - 50.51px);
   border-radius: 4px;
   width: 24px;
   height: 24px;
@@ -174,8 +180,8 @@
   position: absolute;
 }
 .logIn1 {
-  top: 12px;
-  left: 12px;
+  top: 9px;
+  left: 14px;
   letter-spacing: -0.01px;
   line-height: 24px;
   font-weight: 600;
@@ -191,8 +197,8 @@
   position: relative;
   border-radius: 8px;
   background-color: #d5e6cf;
-  width: 71.41px;
-  height: 48px;
+  width: 68px;
+  height: 43px;
   color: #1b4d08;
 }
 .frame3 {
@@ -207,9 +213,10 @@
   position: relative;
   border-radius: 8px;
   background-color: #2d810e;
-  width: 82.58px;
-  height: 48px;
+  width: 74px;
+  height: 43px;
   color: #fff;
+  margin-right: 1rem;
 }
 .ulaccount {
   /* position: absolute; */
@@ -230,6 +237,8 @@
   left: 0;
   width: 100%;
   height: 50px;
+  padding-top: 0.5rem;
+
 }
 .frame4,
 .svgIcon3 {
@@ -237,11 +246,11 @@
   overflow: hidden;
 }
 .svgIcon3 {
-  top: 12px;
+  top: 15px;
   left: calc(50% + 23.5px);
   border-radius: 4px;
-  width: 24px;
-  height: 24px;
+  width: 19px;
+  height: 19px;
 }
 .frame4 {
   top: 52px;
@@ -253,9 +262,9 @@
   position: relative;
   border-radius: 8px;
   background-color: #fff;
-  width: 119px;
+  width: 90px;
   height: 48px;
-  font-size: 15px;
+  font-size: 13.5px;
 }
 .frame5,
 .svgIcon4 {
@@ -263,11 +272,11 @@
   overflow: hidden;
 }
 .svgIcon4 {
-  top: 12px;
-  left: calc(50% + 42.79px);
+  top: 15px;
+  left: calc(50% + 34.79px);
   border-radius: 4px;
-  width: 24px;
-  height: 24px;
+  width: 19px;
+  height: 19px;
 }
 .frame5 {
   top: 52px;
@@ -279,7 +288,7 @@
   position: relative;
   border-radius: 8px;
   background-color: #fff;
-  width: 157.59px;
+  width: 128.59px;
   height: 48px;
 }
 .frame6 {
@@ -294,7 +303,7 @@
   position: relative;
   border-radius: 8px;
   background-color: #fff;
-  width: 91px;
+  width: 78px;
   height: 48px;
 }
 .deliveryCurbsidesvgIcon {
@@ -308,8 +317,8 @@
   overflow: hidden;
 }
 .divimgWrapper {
-  top: 12px;
-  left: 175.13px;
+  top: 9px;
+  left: 145.13px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -325,7 +334,7 @@
   position: relative;
   border-radius: 8px;
   background-color: #fff;
-  width: 211.13px;
+  width: 173.13px;
   height: 48px;
 }
 .frame8 {
@@ -346,13 +355,14 @@
 .ulnavigationMenus {
   display: flex;
   flex-direction: row;
-  padding: 0 6.000030517578125px 0 0;
+  padding: 0 6px 0 0;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 6px;
+  margin-top: 9px;
 }
 .chooseAStore {
-  font-size: 15px;
+  font-size: 12px;
   text-decoration: underline;
   display: flex;
   color: #2d810e;
@@ -360,10 +370,9 @@
   align-items: center;
   justify-content: center;
   width: 115.03px;
-  height: 20px;
+  height: 100%;
 }
 .divprimaryNavigation {
-  margin: 1rem 0;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -371,14 +380,14 @@
   color: #004c2a;
 }
 .divnavigation {
-  position: absolute;
-  width: calc(100% - 156.8px);
+  width: 100%;
   top: 16px;
   right: 32px;
   left: 124.8px;
   height: 106px;
 }
 .divnavigationBarMain {
+  display: flex;
   position: absolute;
   width: 100%;
   top: 32px;
@@ -386,7 +395,7 @@
   left: 0;
   background-color: #fff;
   height: 126px;
-  font-size: 16px;
+  font-size: 13.5px;
   color: #757575;
 }
 .publixHeader {
@@ -400,15 +409,16 @@
   font-family: "Inter";
 }
 .careWhenYou {
+  font-size: 45px;
   position: relative;
-  line-height: 72px;
+  line-height: 45px;
   display: inline-block;
   width: 674px;
 }
 .exploreTopRatedDoctors {
   align-self: stretch;
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 25px;
   font-family: Inter;
 }
@@ -421,12 +431,15 @@
   gap: 20px;
 }
 .telemedicineAppointment {
+  font-size: 1rem;
   position: relative;
   line-height: 24px;
 }
+
 .prescriptionRefillWrapper,
 .telemedicineAppointmentWrapper {
   flex: 1;
+  padding: 8px 0px !important;
   border-radius: 9px;
   display: flex;
   flex-direction: row;
@@ -437,10 +450,12 @@
 .telemedicineAppointmentWrapper {
   background-color: #007737;
   cursor: pointer;
+  padding: 9px 0px !important;
 }
 .prescriptionRefillWrapper {
   border: 2px solid #007737;
   color: #007737;
+  box-sizing: border-box;
 }
 .frameContainer,
 .frameGroup{
@@ -449,7 +464,7 @@
   justify-content: flex-start;
 }
 .frameContainer {
-  width: 672px;
+  width: 34rem;
   flex-direction: row;
   gap: 16px;
   text-align: center;
@@ -475,8 +490,9 @@
   left: 864.11px;
   border-radius: 4.86px;
   width: 100%;
-  height: 506px;
+  height: 351px;
   object-fit: cover;
+  margin-top: 2rem;
 }
 .frameParent {
   padding: 0 1.5rem;
@@ -510,7 +526,17 @@
   position: absolute;
   left: 0;
   width: 281.12px;
+  display:flex
 }
+.cardInfo{
+  padding: 2rem 2.75rem 1rem 1rem;
+}
+.cardDiscount{
+  color: white;
+  font-size: 25px;
+  padding: 1rem;
+}
+
 .groupChild {
   top: 0;
   border-radius: 9.1px;
@@ -518,7 +544,7 @@
   height: 180px;
 }
 .groupItem {
-  top: 64.98px;
+  top: 54.98px;
   background-color: #007737;
   height: 115.26px;
 }
@@ -528,9 +554,6 @@
 .memberId021916,
 .pcn021916,
 .save {
-  position: absolute;
-  top: 90.28px;
-  left: 18.74px;
   line-height: 120%;
   color: white;
 }
@@ -565,7 +588,7 @@
 }
 .publixBrandmarksvgIcon1 {
   position: absolute;
-  top: 17.5px;
+  top: 12.5px;
   left: 19px;
   width: 36px;
   height: 36px;
@@ -575,9 +598,9 @@
 }
 .prescriptionSavingCard {
   position: absolute;
-  top: 14px;
-  left: 177px;
-  font-size: 14px;
+  top: 11px;
+  left: 169px;
+  font-size: 12px;
   line-height: 17.5px;
   color: #1d2f28;
 }
@@ -586,32 +609,41 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 281.12px;
-  height: 180.24px;
+  width: 249.12px;
+  height: 163.24px;
 }
 .groupWrapper {
-  top: 17px;
-  left: 45.11px;
   border-radius: 13.15px;
   box-shadow:  1px 51px 24px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
+
+.cardShadow{
+  width: 23rem;
+  position: absolute;
+  height: 3rem;
+  top: 39rem;
+  left: 0rem;
+  opacity: 0.6;
+  z-index: 0;
+}
 .chatmdsSavingCardYellow1Parent{
-  
-  width: 413px;
+  width: 300px;
   height: 237px;
+  z-index: 1;
+  position: relative;
 }
 .groupDiv {
-  margin-top: 2rem;
+  margin-top: 3rem;
   display:flex;
   flex-direction: row-reverse;
   width: 413px;
   height: 237px;
   top: 570px;
   left: 82.89px;
-  width: 683px;
+  width: 620px;
   z-index: 2;
-  font-size: 13.12px;
+  font-size: 11.12px;
 }
 
 .publixHeaderParent {
@@ -624,7 +656,7 @@
   position: relative;
   gap: 26px;
   text-align: left;
-  font-size: 10.1px;
+  font-size: 10.5px;
   color: #fff;
   font-family: Lasiver-Medium;
 }
