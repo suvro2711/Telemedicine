@@ -76,8 +76,9 @@
   font-family: "Helvetica Neue LT Pro";
 }
 .footer {
+  margin-top: 4rem;
   background-color: #f3f3f3;
-  width: 100%;
+  width: 100vw;
   height: 550px;
   overflow: hidden;
   flex-shrink: 0;

@@ -195,7 +195,7 @@ const MaskGroup: FunctionComponent = () => {
                       </div>
                     </div>
                   </div>
-                  <div className={styles.groupParent1}>
+                  <div className={styles.layer1Parent}>
                     <img
                       className={styles.frameChild3}
                       alt=""

@@ -33,14 +33,12 @@
 }
 .ourPatientsLove {
   margin-top: 4rem;
-  position: relative;
   font-size: 40px;
   line-height: 46px;
   font-family: Lasiver-Medium;
   color: #1d2f28;
   text-align: left;
   display: inline-block;
-  width: 1650px;
 }
 .frameChild {
   position: relative;
@@ -98,7 +96,7 @@
   justify-content: flex-start;
   gap: 20px;
 }
-.frameContainer,
+
 .frameDiv {
   display: flex;
   align-items: flex-start;
@@ -114,12 +112,11 @@
   gap: 30px;
 }
 .frameContainer {
-  position: absolute;
-  top: 0;
-  left: calc(50% - 772px);
-  width: 1544px;
+  width: 100%;
+  gap: 3rem;
   flex-direction: row;
   justify-content: space-between;
+  display: flex;
 }
 .groupChild,
 .groupChild1,
@@ -155,33 +152,27 @@
   left: 256px;
 }
 .rectangleParent {
-  position: absolute;
-  top: 369px;
-  left: 634px;
-  width: 276px;
-  height: 20px;
-}
-.frameGroup {
   position: relative;
-  width: 1544px;
-  height: 389px;
+  top: 1.5rem;
+  left: -9rem;
 }
-.groupWrapper,
-.ourPatientsLoveUsParent {
+.frameGroup{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
+  align-items: center;
 }
-.groupWrapper {
+.groupWrapper{
+  margin-top: 2rem;
   border-radius: 2rem;
   background-color: #007737;
-  padding: 120px 104px 60px;
-  align-items: flex-start;
+  padding: 4rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .ourPatientsLoveUsParent {
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding: 0 3rem;
   align-items: center;
   gap: 50px;
 }
@@ -311,30 +302,30 @@
   padding: 30px;
   gap: 20px;
 }
-.frameParent4,
-.frameWrapper1,
 .groupParent1 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
 .frameParent4 {
-  width: 1544px;
+  display: flex;
+  width: 100%;
   flex-direction: row;
   gap: 20px;
 }
 .frameWrapper1 {
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   border-radius: 30px;
   background-color: #f3f3f3;
   flex-direction: column;
-  padding: 120px 104px;
+  padding: 88px 104px;
 }
 .groupDiv {
-  position: relative;
   width: 100%;
   height: 766.45px;
-  overflow-x: auto;
-    overflow-y: hidden;
 }
 .frameParent,
 .maskGroup,
