@@ -6,11 +6,14 @@ import TelehealthContainer from "../components/telehealth-container";
 import styles from "./MaskGroup.module.css";
 import Container from '@mui/material/Container';
 import { useCommonStyles } from "../MaterialUIStyles";
+import Header from "../components/Header/Header";
 
 const MaskGroup: FunctionComponent = () => {
   const commonStyle = useCommonStyles()
   return (
+    <>
     <div className={styles.subWapper}>
+          <Header />
           <ProductSearchSection />
            <DoctorSection />
           <MarketComparisonContainer
@@ -228,6 +231,7 @@ const MaskGroup: FunctionComponent = () => {
             privacyPolicyDisclaimerTeDisplay="inline-block"
           /> 
     </div>
+    </>
   );
 };
 
