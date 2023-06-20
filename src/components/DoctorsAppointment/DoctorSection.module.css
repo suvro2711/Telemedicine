@@ -203,3 +203,9 @@
   color: #1d2f28;
   font-family: Lasiver-Medium;
 }
+
+@media (min-width: 1896px) {
+  .cardAcordionParent{
+    flex-direction: row-reverse;
+  }
+}
