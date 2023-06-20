@@ -18,7 +18,7 @@ const DiseaseCategoryCard = ({disease, selectDisease}: DiseaseCategoryCardProps)
           <div className={styles.icons}>
             <img
               className={styles.groupIcon}
-              src={disease.iconPath}
+              src={`${disease.isSelected ? 'diseaseIconWhite':'diseaseIconGreen'}/${disease.iconPath}`}
             />
           </div>
         </div>
@@ -28,7 +28,7 @@ const DiseaseCategoryCard = ({disease, selectDisease}: DiseaseCategoryCardProps)
       </div>
       <img
         className={styles.svgsc1kmzbw2Icon}
-        src="/svgsc1kmzbw25.svg"
+        src={disease.isSelected ? "/whiteDownArrow.svg" : "/greenRightArrow.svg"}
       />
     </div>
   )
