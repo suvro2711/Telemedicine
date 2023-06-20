@@ -12,8 +12,10 @@ const MaskGroup: FunctionComponent = () => {
   const commonStyle = useCommonStyles()
   return (
     <>
-    <div className={styles.subWapper}>
+    <div className={styles.headerWapper}>
           <Header />
+    </div>
+    <div className={styles.subWapper}>
           <ProductSearchSection />
            <DoctorSection />
           <MarketComparisonContainer

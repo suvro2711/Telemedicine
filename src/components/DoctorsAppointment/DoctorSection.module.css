@@ -133,11 +133,11 @@
 }
 .cardAcordionParent {
   align-self: stretch;
-  height: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .text {
