@@ -3,58 +3,58 @@ import styles from "./DoctorSection.module.css";
 import DiseaseCategoryCard from "./DiseaseCategoryCard";
 import { diseaseListIntial } from "./initialDiseaseData";
 
-export interface Disease{
+export interface DiseaseCategory{
   name:string
   iconPath?:string
   isSelected?:boolean
+  diseases?:string[]
 }
 
 const DoctorSection: FunctionComponent = () => {
   
-  const [diseaseList, setDiseaseList] = useState<Disease[]>(diseaseListIntial)
+  const [diseaseCategoryList, setDiseaseCategoryList] = useState<DiseaseCategory[]>(diseaseListIntial)
 
   const shrikantsSuggsion = (diseaseName:string) => {
-    // const selectDisease:Disease| undefined = diseaseList.find(disease => disease.name === diseaseName)
-    // const restOfTheDisease:Disease[] = diseaseList.map(disease => !(disease.name === diseaseName) ? {...disease, isSelected: false} : {name:""})
-    // const filteredDisease:Disease[] = restOfTheDisease.filter(disease => disease.name)
-    // const newDiseaseList:Disease[] = selectDisease ? [ {...selectDisease, isSelected:true}, ...filteredDisease] : []
-    const newDiseaseList:Disease[] = diseaseList.map(disease => !(disease.name === diseaseName) ? {...disease, isSelected: false} : {...disease, isSelected:true})
-    setDiseaseList(newDiseaseList)
+    const newDiseaseList:DiseaseCategory[] = diseaseCategoryList.map(disease => !(disease.name === diseaseName) ? {...disease, isSelected: false} : {...disease, isSelected:true})
+    setDiseaseCategoryList(newDiseaseList)
     console.log(newDiseaseList)
   }
 
-  const originalSuggetion = (diseaseName:string) => {
-    const filterDisease = (partialDisease: ({
+  const originalSuggetion = (diseaseCategoryName:string) => {
+    const filterDisease = (partialDiseaseCategory: ({
       isSelected?: boolean| undefined;
       name?: string | undefined;
       iconPath?: string | undefined;
-    })[]):Disease[] =>{
-      const filteredDisease= partialDisease.map((disease)=>{
-        if(disease.name){
+      diseases?: string[] | undefined;
+    })[]):DiseaseCategory[] =>{
+      const filteredDiseaseCategory= partialDiseaseCategory.map((diseaseCategory)=>{
+        if(diseaseCategory.name){
           return({
-            name:disease.name,
-            iconPath:disease.iconPath??"",
-            isSelected:disease.isSelected??false
+            name:diseaseCategory.name,
+            iconPath:diseaseCategory.iconPath??"",
+            isSelected:diseaseCategory.isSelected??false,
+            diseases:diseaseCategory.diseases || []
           })
         }
-      }).filter(disease => disease != undefined) as Disease[]
-      return  filteredDisease
+      }).filter(disease => disease != undefined) as DiseaseCategory[]
+      return  filteredDiseaseCategory
     }
     const smallWebScreenWidthThreshold = 1896
     const needToPutSelectedAtFirst = window.innerWidth < smallWebScreenWidthThreshold
     if(needToPutSelectedAtFirst){
-      const selectDisease = diseaseList.find(disease => disease.name === diseaseName) 
-      const restOfTheDisease:Disease[] = diseaseList.map(disease => !(disease.name === diseaseName) ? {...disease, isSelected: false} : {name:""})
-      const filteredDisease:Disease[] = restOfTheDisease.filter(disease => disease.name)
+      const selectDisease = diseaseCategoryList.find(disease => disease.name === diseaseCategoryName) 
+      const restOfTheDisease:DiseaseCategory[] = diseaseCategoryList.map(disease => !(disease.name === diseaseCategoryName) ? {...disease, isSelected: false} : {name:""})
+      const filteredDisease:DiseaseCategory[] = restOfTheDisease.filter(disease => disease.name)
       const arrangedDiseaseList = needToPutSelectedAtFirst && selectDisease  ?   [  ...filteredDisease, {...selectDisease, isSelected:true}] :[ {...selectDisease, isSelected:true}, ...filteredDisease]
-      const newDiseaseList:Disease[] = selectDisease ? filterDisease(arrangedDiseaseList): []
-      setDiseaseList(newDiseaseList)
+      const newDiseaseList:DiseaseCategory[] = selectDisease ? filterDisease(arrangedDiseaseList): []
+      setDiseaseCategoryList(newDiseaseList)
     }else{
-      const newDiseaseList:Disease[] = diseaseList.map(disease => !(disease.name === diseaseName) ? {...disease, isSelected: false} : {...disease, isSelected:true})
-      setDiseaseList(newDiseaseList)
+      const newDiseaseList:DiseaseCategory[] = diseaseCategoryList.map(disease => !(disease.name === diseaseCategoryName) ? {...disease, isSelected: false} : {...disease, isSelected:true})
+      setDiseaseCategoryList(newDiseaseList)
     }
   }
 
+  const selectDiseaseCategory = diseaseCategoryList.find(disease => disease.isSelected)
   return (
     <div className={styles.frameParent}>
       <div
@@ -70,85 +70,24 @@ const DoctorSection: FunctionComponent = () => {
       <div className={styles.prototypeUserSurvey}>
         <div className={styles.cardAcordionParent}>
           {
-            diseaseList.map(disease => <DiseaseCategoryCard  
-              key={disease.name}
-              disease={disease}
+            diseaseCategoryList.map(diseaseCategory => <DiseaseCategoryCard  
+              key={diseaseCategory.name}
+              disease={diseaseCategory}
               selectDisease={originalSuggetion}
             />)
           }
         </div>
         <div className={styles.filter}>
           <div className={styles.selectParent}>
-            <div className={styles.select}>
-              <div className={styles.text}>Acute Bronchitis</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Ear Infection</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Nausea /Vomiting</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Phone Consult</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Stye</div>
-            </div>
-          </div>
-          <div className={styles.selectParent}>
-            <div className={styles.select}>
-              <div className={styles.text}>Allergies</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Flu (Influenza)</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Oral Herpes (Cold Sore)</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Pink Eye</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Thrush (Oral)</div>
-            </div>
-          </div>
-          <div className={styles.selectParent}>
-            <div className={styles.select}>
-              <div className={styles.text}>COVID-19 Rx (Paxlovid)</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Migraine Relief</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Pain Relief</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Sinus Infection</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>URI-Respiratory Infection</div>
-            </div>
-          </div>
-          <div className={styles.selectParent}>
-            <div className={styles.select}>
-              <div className={styles.text}>Dental Infection</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Motion Sickness</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Pediatric</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>Strep Throat</div>
-            </div>
-            <div className={styles.select}>
-              <div className={styles.text}>UTI</div>
-            </div>
-          </div>
+            {selectDiseaseCategory?.diseases?.length && selectDiseaseCategory?.diseases?.length > 0 &&
+               selectDiseaseCategory?.diseases.map(disease => <div className={styles.select}>
+                <div className={styles.text}>{disease}</div>
+              </div>)
+            }
         </div> 
       </div>
     </div>
+    </div> 
   )
 
 }

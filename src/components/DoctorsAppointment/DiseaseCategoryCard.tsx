@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './DiseaseCategoryCard.module.css'
-import { Disease } from './DoctorSection'
+import { DiseaseCategory } from './DoctorSection'
 
 type DiseaseCategoryCardProps = {
-  disease:Disease
+  disease:DiseaseCategory
   selectDisease: (diseaseName: string) => void
 }
 
