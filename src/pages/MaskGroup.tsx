@@ -20,8 +20,8 @@ const MaskGroup: FunctionComponent = () => {
            <DoctorSection />
           <MarketComparisonContainer
             dolorEgestasUllamcorperNi="Don’t wait weeks for an appointment. Our doctors, therapists, and specialists can help you with the flu, infections, anxiety, stress, skin conditions, and provide advice on serious medical conditions. No matter what you're facing, we’re available from wherever you are by phone, video, or app."
-            star1="/star-1110.svg"
-            star11="/star-1110.svg"
+            star1="/star-11.svg"
+            star11="/star-11.svg"
             othersDisplay="inline-block"
             frame21BoxSizing="border-box"
             propDisplay="inline-block"
@@ -54,7 +54,7 @@ const MaskGroup: FunctionComponent = () => {
                         <img
                           className={styles.frameChild}
                           alt=""
-                          src="/star-127.svg"
+                          src="/star-11.svg"
                         />
                         <div className={styles.div}>5.0</div>
                       </div>
@@ -78,7 +78,7 @@ const MaskGroup: FunctionComponent = () => {
                         <img
                           className={styles.frameChild}
                           alt=""
-                          src="/star-127.svg"
+                          src="/star-11.svg"
                         />
                         <div className={styles.div}>5.0</div>
                       </div>
@@ -102,7 +102,7 @@ const MaskGroup: FunctionComponent = () => {
                         <img
                           className={styles.frameChild}
                           alt=""
-                          src="/star-127.svg"
+                          src="/star-11.svg"
                         />
                         <div className={styles.div}>5.0</div>
                       </div>
