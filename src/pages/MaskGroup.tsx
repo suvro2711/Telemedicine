@@ -146,7 +146,7 @@ const MaskGroup: FunctionComponent = () => {
                     <img
                       className={styles.layer1Icon}
                       alt=""
-                      src="/vector.svg"
+                      src="/diseaseIconGreen/layer-14.svg"
                     />
                     <div className={styles.urgentCare}>Urgent Care</div>
                     <div className={styles.treatmentForAllergiesEarIParent}>
@@ -164,7 +164,7 @@ const MaskGroup: FunctionComponent = () => {
                     <img
                       className={styles.groupIcon}
                       alt=""
-                      src="/group-19.svg"
+                      src="/diseaseIconGreen/group-181.svg"
                     />
                     <div className={styles.treatmentForAllergiesEarIParent}>
                       <div className={styles.urgentCare}>Dermatology</div>
@@ -182,7 +182,7 @@ const MaskGroup: FunctionComponent = () => {
                     <img
                       className={styles.frameChild2}
                       alt=""
-                      src="/group-21.svg"
+                      src="/diseaseIconGreen/group-232.svg"
                     />
                     <div className={styles.womensHealthParent}>
                       <div className={styles.urgentCare}>Women’s Health</div>
@@ -201,7 +201,7 @@ const MaskGroup: FunctionComponent = () => {
                     <img
                       className={styles.frameChild3}
                       alt=""
-                      src="/group-234.svg"
+                      src="/diseaseIconGreen/group-234.svg"
                     />
                     <div className={styles.mensHealthParent}>
                       <div className={styles.urgentCare}>Men’s Health</div>
