@@ -62,6 +62,7 @@ export const diseaseListIntial:DiseaseCategory[] = [
     ]
     },
     {name:"Men's Health",
+    iconPath:"/group-233.svg",
     diseases:[
     "Balanitis",
     "Erectile Dysfunction",
@@ -99,6 +100,7 @@ export const diseaseListIntial:DiseaseCategory[] = [
     "Weight Loss Rx(Obesity)"],
   },
     {name:"Dermatology",
+    iconPath:"/group-181.svg",
     diseases:[
     "Abscess(Boil)",
     "Acne",

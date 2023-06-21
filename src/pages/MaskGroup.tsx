@@ -146,7 +146,7 @@ const MaskGroup: FunctionComponent = () => {
                     <img
                       className={styles.layer1Icon}
                       alt=""
-                      src="/layer-14.svg"
+                      src="/vector.svg"
                     />
                     <div className={styles.urgentCare}>Urgent Care</div>
                     <div className={styles.treatmentForAllergiesEarIParent}>
