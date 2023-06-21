@@ -1,6 +1,6 @@
 import { DiseaseCategory } from "./DoctorSection";
 
-export const diseaseListIntial:Disease[] = [
+export const diseaseListIntial:DiseaseCategory[] = [
     {name:"Urgent Care (Sick Visit)", 
     iconPath:"/vector.svg",
     diseases: [
@@ -43,14 +43,14 @@ export const diseaseListIntial:Disease[] = [
     "Gonorrhea"]
     },
     {name:"Women's Health",
-    iconPath:"/group-232.svg"
-    diseases: [, 
+    iconPath:"/group-232.svg",
+    diseases: [
     "Acne(Women)",
     "Anti-aging(Women)",
     "Bacterial Vaginosis",
     "Birth Control",
     "Dermatology(Women)",
-    "Excessive Sweating(Wom,en)"
+    "Excessive Sweating(Wom,en)",
     "Menstrual Suppression",
     "Pediatrics",
     "Sexual Disorder",
@@ -59,6 +59,7 @@ export const diseaseListIntial:Disease[] = [
     "Vaginal Yeast Infection",
     "Weight loss Rx(Women)",
     "Women's Hair Loss",
+    ]
     },
     {name:"Men's Health",
     diseases:[
@@ -73,8 +74,8 @@ export const diseaseListIntial:Disease[] = [
     "Weight Loss Rx(men)",]
     },
     {name:"Psychiatry",
-    iconPath:"/group-421.svg"
-    diseases: [, 
+    iconPath:"/group-421.svg",
+    diseases: [
     "ADHD",
     "Depression",
     "General Anxiety",
@@ -82,7 +83,7 @@ export const diseaseListIntial:Disease[] = [
     "Social Anxiety",]
     },
     {name:"Chronic Medical Conditions",
-    iconPath:"/group-401.svg"
+    iconPath:"/group-401.svg",
     diseases:[
     "Asthma",
     "Chronic Allergies",
@@ -96,7 +97,7 @@ export const diseaseListIntial:Disease[] = [
     "Prescription Refill",
     "Smoking Cessation",
     "Weight Loss Rx(Obesity)"],
-  }
+  },
     {name:"Dermatology",
     diseases:[
     "Abscess(Boil)",
@@ -121,16 +122,16 @@ export const diseaseListIntial:Disease[] = [
     "Skin,Nail, and Hair"],
     },
     {name:"Miscellaneous Health", 
-    iconPath:"/group-391.svg"
+    iconPath:"/group-391.svg",
     diseases:[
     "Can't Find Your Condition?",
     "Clearence/Return to work Letter",
     "Lab result Review",
-    "Medical Excuse Note"
+    "Medical Excuse Note",
     "Rx Refill",
     "Lab testing",
     "Imaging",]
-},
+    },
     {name:"Online prescription refill", 
-    iconPath:"/group-31.svg"
-}
+    iconPath:"/group-31.svg"}
+  ]
