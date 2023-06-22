@@ -24,7 +24,6 @@ export const diseaseListIntial:DiseaseCategory[] = [
       "Thrush (Oral)",
       "Respiratory Infection",
       "UTI"],
-      isSelected:true
     },
     {name:"Sexually Transmitted Diseases",
     iconPath:"/group-411.svg",
