@@ -100,8 +100,12 @@ export const diseaseListIntial:DiseaseCategory[] = [
     "Smoking Cessation",
     "Weight Loss Rx(Obesity)"],
   },
+<<<<<<< HEAD
   {
     name:"Dermatology",
+=======
+    {name:"Dermatology",
+>>>>>>> 9233416bd0d682ea2d724573d479c24e0e96d421
     iconPath:"/group-181.svg",
     diseases:[
     "Abscess(Boil)",
