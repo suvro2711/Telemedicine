@@ -55,26 +55,30 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
-.svgsc1kmzbw2Icon {
+.arrowSVG,.arrowReverseSVG {
   position: relative;
   width: 24px;
   height: 24px;
   overflow: hidden;
   flex-shrink: 0;
+  display: none;
+}
+.arrowReverseSVG{
+  transform: scaleX(-1);
+  display: block;
 }
 .selectedCard,
 .normalCard {
-  min-width: 11rem;
   align-self: stretch;
-  flex: 1;
+  flex: 1 1;
   border-radius: 30px;
   display: flex;
-  flex-direction: column;
-  padding: 20px;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .selectedCard {
@@ -84,6 +88,7 @@
 .normalCard {
   background-color: #fff;
   color:#007737;
+  min-height: 12rem
 }
 
 .iconsChild {
@@ -207,4 +212,35 @@
   font-size: 40px;
   color: #1d2f28;
   font-family: Lasiver-Medium;
+}
+
+
+@media (min-width: 800px) {
+
+  .normalCard, .selectedCard{
+    max-width: 11rem;
+    min-width: 11rem;
+    min-height: 12rem;
+    align-self: stretch;
+    flex: 1;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .arrowSVG{
+    display: block;
+  }
+  .diseaseInfo {
+    margin-bottom: 1rem;
+  }
+  .arrowReverseSVG{
+    display:none
+  }
+  .diseaseInfo {
+    margin: 0rem;
+  }
 }

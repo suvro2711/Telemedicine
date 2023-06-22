@@ -24,6 +24,7 @@ export const diseaseListIntial:DiseaseCategory[] = [
       "Thrush (Oral)",
       "Respiratory Infection",
       "UTI"],
+      isSelected:true
     },
     {name:"Sexually Transmitted Diseases",
     iconPath:"/group-411.svg",
@@ -62,6 +63,7 @@ export const diseaseListIntial:DiseaseCategory[] = [
     ]
     },
     {name:"Men's Health",
+    iconPath:"/group-233.svg",
     diseases:[
     "Balanitis",
     "Erectile Dysfunction",
@@ -98,7 +100,9 @@ export const diseaseListIntial:DiseaseCategory[] = [
     "Smoking Cessation",
     "Weight Loss Rx(Obesity)"],
   },
-    {name:"Dermatology",
+  {
+    name:"Dermatology",
+    iconPath:"/group-181.svg",
     diseases:[
     "Abscess(Boil)",
     "Acne",
@@ -132,6 +136,9 @@ export const diseaseListIntial:DiseaseCategory[] = [
     "Lab testing",
     "Imaging",]
     },
-    {name:"Online prescription refill", 
-    iconPath:"/group-31.svg"}
+    {
+      name:"Online prescription refill", 
+      iconPath:"/group-31.svg",
+      diseases:[]
+    }
   ]
