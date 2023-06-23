@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction } from 'react'
+import React, { Dispatch, SetStateAction, useEffect, useState } from 'react'
 import styles from './DiseaseCategoryCard.module.css'
 import { DiseaseCategory } from './DoctorSection'
 import { isWindowWithSmaller } from '../../utils'
@@ -13,6 +13,8 @@ type DiseaseCategoryCardProps = {
 }
 
 const DiseaseCategoryCard = ({disease, selectDisease, showCategories, setShowCategories, usSelectDisease}: DiseaseCategoryCardProps) => { 
+
+  const [cardStyle, setCardStyle] = useState(normalCardStyle)
 
   const getNormalCardDisplayType = ():'flex'|'block'|'none' => {
     const isItASmallScreen = isWindowWithSmaller(mediaSizes.small)
@@ -31,10 +33,20 @@ const DiseaseCategoryCard = ({disease, selectDisease, showCategories, setShowCat
     usSelectDisease()
   }
 
+  useEffect(() => {
+    if(disease.isSelected){
+      setCardStyle(selectedCardStyle)
+    }else{
+      setCardStyle(normalCardStyle)
+    }
+  },[disease.isSelected])
+
   return (
-    <div className={disease.isSelected ? styles.selectedCard : styles.normalCard} 
+    <div className={cardStyle.card} 
       style={{display:getNormalCardDisplayType()}}
       onClick={() => onDiseaseSelect()}
+      onMouseOver={() => setCardStyle(selectedCardStyle)}
+      onMouseLeave={() => !disease.isSelected && setCardStyle(normalCardStyle)}
     >
       <div
         onClick={onBackButtonClicked}
@@ -49,7 +61,7 @@ const DiseaseCategoryCard = ({disease, selectDisease, showCategories, setShowCat
           <div className={styles.icons}>
             <img
               className={styles.groupIcon}
-              src={`${disease.isSelected ? 'diseaseIconWhite':'diseaseIconGreen'}/${disease.iconPath}`}
+              src={`${cardStyle.diseaseIconColor}/${disease.iconPath}`}
             />
           </div>
         </div>
@@ -59,10 +71,22 @@ const DiseaseCategoryCard = ({disease, selectDisease, showCategories, setShowCat
       </div>
       <img
         className={styles.arrowSVG}
-        src={disease.isSelected ? "/whiteDownArrow.svg" : "/greenRightArrow.svg"}
+        src={`/${cardStyle.diseaseArrowColor}.svg`}
       />
     </div>
   )
 }
 
 export default DiseaseCategoryCard
+
+const normalCardStyle = {
+  card:styles.normalCard,
+  diseaseIconColor:"diseaseIconGreen",
+  diseaseArrowColor:"greenRightArrow"
+}
+
+const selectedCardStyle = {
+  card:styles.selectedCard,
+  diseaseIconColor:"diseaseIconWhite",
+  diseaseArrowColor:"whiteDownArrow"
+}

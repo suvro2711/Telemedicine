@@ -65,7 +65,7 @@ const DoctorSection: FunctionComponent = () => {
         <div className={styles.filter}>
           <div className={styles.selectParent}>
             {showDiseaseList ?
-               selectDiseaseCategory?.diseases.map(disease => <div className={styles.select}>
+               selectDiseaseCategory?.diseases.map(disease => <div className={`${styles.select} headShake`} key={disease}>
                 <div className={styles.text}>{disease}</div>
               </div>) : <div />
             }
