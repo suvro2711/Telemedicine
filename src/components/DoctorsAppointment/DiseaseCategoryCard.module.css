@@ -245,6 +245,9 @@
   .diseaseInfo {
     margin: 0rem;
   }
+  .diseaseName{
+    min-width: 9rem;
+  }
 }
 
 @keyframes headShake {
