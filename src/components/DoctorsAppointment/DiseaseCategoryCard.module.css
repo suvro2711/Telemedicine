@@ -46,6 +46,7 @@
   display:flex;
   min-width: 10rem;
   align-items: center;
+  margin-left: 1rem;
 }
 .diseaseInfo {
   align-self: stretch;
@@ -59,36 +60,48 @@
 }
 .arrowSVG,.arrowReverseSVG {
   position: relative;
-  width: 24px;
   height: 24px;
   overflow: hidden;
   flex-shrink: 0;
   display: none;
 }
+.arrowSVG{
+  width: 20px;
+  margin: 0.75rem 0.5rem;
+}
 .arrowReverseSVG{
+  margin: 0.5rem;
   transform: scaleX(-1);
   display: block;
+  width: 24px;
 }
 .selectedCard,
-.normalCard {
+.normalCard,
+.hoverCard{
   align-self: stretch;
   flex: 1 1;
-  border-radius: 30px;
+  border-radius: 15px;
   display: flex;
   flex-direction: row;
-  padding: 1rem;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+  transition: background-color 0.2s;
 }
 .selectedCard {
   background-color: #007737;
   color: #fff;
+  padding: 0.5rem;
 }
 .normalCard {
   background-color: #fff;
   color:#007737;
-  min-height: 12rem
+  padding: 1rem;
+}
+.hoverCard{
+  background-color: #D5E6CF ;
+  color: #fff;
+  padding: 1rem;
 }
 
 .iconsChild {
@@ -96,9 +109,9 @@
   width: 29px;
   height: 33.06px;
 }
-.variations1 {
+.diseaseIconWrapper {
   border-radius: 10px;
-  width: 40px;
+  width: 10px;
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -215,15 +228,14 @@
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 500px) {
 
-  .normalCard, .selectedCard{
+  .normalCard, .selectedCard,.hoverCard{
     max-width: 11rem;
     min-width: 11rem;
-    min-height: 12rem;
+    min-height: 14rem;
     align-self: stretch;
     flex: 1;
-    border-radius: 30px;
     display: flex;
     flex-direction: row;
     padding: 1rem;
@@ -234,6 +246,7 @@
   }
   .arrowSVG{
     display: block;
+    width: 24px;
   }
   .diseaseInfo {
     margin-bottom: 1rem;
@@ -247,6 +260,10 @@
   }
   .diseaseName{
     min-width: 9rem;
+    margin-left: 0rem;
+  }
+  .diseaseIconWrapper {
+    width: 40px;
   }
 }
 

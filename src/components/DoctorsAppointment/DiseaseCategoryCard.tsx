@@ -45,19 +45,19 @@ const DiseaseCategoryCard = ({disease, selectDisease, showCategories, setShowCat
     <div className={cardStyle.card} 
       style={{display:getNormalCardDisplayType()}}
       onClick={() => onDiseaseSelect()}
-      onMouseOver={() => setCardStyle(selectedCardStyle)}
+      onMouseOver={() => !disease.isSelected && setCardStyle(selectedCardStyle)}
       onMouseLeave={() => !disease.isSelected && setCardStyle(normalCardStyle)}
     >
-      <div
+      {disease.isSelected && <div
         onClick={onBackButtonClicked}
       >
         <img
           className={styles.arrowReverseSVG}
           src={"/whiteLeftArrow.svg"}
         />
-      </div>
+      </div>}
       <div className={styles.diseaseInfo}>
-        <div className={styles.variations1}>
+        <div className={styles.diseaseIconWrapper}>
           <div className={styles.icons}>
             <img
               className={styles.groupIcon}
@@ -87,6 +87,12 @@ const normalCardStyle = {
 
 const selectedCardStyle = {
   card:styles.selectedCard,
+  diseaseIconColor:"diseaseIconWhite",
+  diseaseArrowColor:"whiteDownArrow"
+}
+
+const hoverCardStyle = {
+  card:styles.hoverCard,
   diseaseIconColor:"diseaseIconWhite",
   diseaseArrowColor:"whiteDownArrow"
 }

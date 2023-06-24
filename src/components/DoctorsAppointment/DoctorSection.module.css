@@ -126,7 +126,7 @@
 }
 .cardAcordionParent {
   align-self: stretch;
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-evenly;
@@ -137,64 +137,65 @@
   position: relative;
   line-height: 25px;
 }
-.filter,
-.select{
-  display: flex;
-  justify-content: flex-start;
-}
-.select {
-  align-self: stretch;
-  border-radius: 61px;
+
+
+.diseaseSelectInfo {
+  border-radius: 12px;
   background-color: #f2f6ee;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   flex-direction: row;
   padding: 10px 16px;
   align-items: center;
-  animation: headshake 2s;
+  margin-top: 0.5rem;
+  opacity: 1;
+  animation: fade-in-animation 0.2s;
 }
-.filter{
-  align-items: flex-start;
-}
+
 .selectParent {
   gap: 10px;
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
 }
-.filter {
-  align-self: stretch;
-  flex-direction: row;
-  gap: 20px;
+
+
+.diseaseCategories {
+  overflow-x: auto;
+  overflow-y: hidden;
+  border-radius: 30px;
+  background-color: #d5e6cf;
+  width: 97vw;
+  box-sizing: border-box;
+  align-items: flex-start;
+  gap: 40px;
+  font-size: 14px;
+  color: #404042;
+  font-family: Inter;
+  padding:2rem;
 }
-.frameParent,
-.prototypeUserSurvey {
+
+.frameParent {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   overflow-x: auto;
   overflow-y: hidden;
-}
-.prototypeUserSurvey {
-  border-radius: 30px;
-  background-color: #d5e6cf;
   width: 100%;
-  padding: 40px 40px 50px;
-  box-sizing: border-box;
-  align-items: flex-start;
-  gap: 40px;
-  font-size: 18px;
-  color: #404042;
-  font-family: Inter;
-}
-.frameParent {
-  width: 100%;
-  padding: 0 3rem;
+  padding: 0 1rem;
   align-items: center;
   gap: 35px;
   text-align: left;
-  font-size: 40px;
+  font-size: 1.75rem;
   color: #1d2f28;
   font-family: Lasiver-Medium;
+
+}
+.diseases{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  
 }
 
 @media (min-width: 1896px) {
@@ -216,17 +217,41 @@
 }
 
 @media (min-width: 900px) {
-  .selectParent{
+  .diseases{
+    
     grid-template-columns: 1fr 1fr;
   }
   .cardAcordionParent{
     gap: 10px;
+  }
+  .diseaseCategories{
+    width: 100%;
+    font-size: 18px;
   }
 }
 
 @media (min-width: 800px) {
   .cardAcordionParent{
     display: flex;
+  }
+  .frameParent{
+    padding: 0 3rem;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 500px) {
+  .diseaseCategories{
+    font-size: 18px;
+  }
+}
+
+@keyframes fade-in-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

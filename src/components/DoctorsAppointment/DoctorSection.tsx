@@ -46,7 +46,7 @@ const DoctorSection: FunctionComponent = () => {
           today. Select your appointment type below.
         </div>
       </div>
-      <div className={styles.prototypeUserSurvey}>
+      <div className={styles.diseaseCategories}>
         <div 
         className={styles.cardAcordionParent} 
         style={{gridTemplateColumns:showCategories?'1fr 1fr':'1fr'}}
@@ -63,9 +63,9 @@ const DoctorSection: FunctionComponent = () => {
           }
         </div>
         <div className={styles.filter}>
-          <div className={styles.selectParent}>
+          <div className={styles.diseases}>
             {showDiseaseList ?
-               selectDiseaseCategory?.diseases.map(disease => <div className={`${styles.select} headShake`} key={disease}>
+               selectDiseaseCategory?.diseases.map(disease => <div className={`${styles.diseaseSelectInfo}`} key={disease}>
                 <div className={styles.text}>{disease}</div>
               </div>) : <div />
             }
