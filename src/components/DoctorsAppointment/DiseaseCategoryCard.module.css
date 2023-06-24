@@ -70,7 +70,7 @@
   margin: 0.75rem 0.5rem;
 }
 .arrowReverseSVG{
-  margin: 0.5rem;
+  
   transform: scaleX(-1);
   display: block;
   width: 24px;
@@ -253,6 +253,7 @@
     min-height: 125px;
   }
   .arrowReverseSVG{
+    margin: 0.5rem;
     display:none
   }
   .diseaseInfo {
