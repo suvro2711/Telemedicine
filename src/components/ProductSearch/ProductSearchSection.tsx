@@ -1,8 +1,8 @@
 import { FunctionComponent, memo, useCallback } from "react";
-import ContainerGrid from "./ContainerGrid";
+import ContainerGrid from "../ContainerGrid";
 import styles from "./ProductSearchSection.module.css";
 import { Container } from "@mui/material";
-import LogoLink from "./common/LogoLink/LogoLink";
+import LogoLink from "../common/LogoLink/LogoLink";
 
 // import mainLogo from "../resources/svg/mainlogo.svg"
 

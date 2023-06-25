@@ -1,0 +1,119 @@
+.PublixVsOthers {
+    display: flex;
+    justify-content: center;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+.PublixVsOthersLeft {
+    width: 26%;
+}
+.PublixVsOthersRight {
+    width:80%;
+    display: flex;
+    justify-content: end;
+}
+
+.boxleft {
+    display: flex;
+}
+.boxleft .box1 .content {
+    text-align: left;
+}
+.boxleft .box2 .content,
+.boxright .box3 .content{
+    text-align: center;
+}
+.box1 .contentHead {
+    visibility: hidden;
+    border-radius: 10px 10px 0px 0px;
+    padding: 24px;
+}
+.box2 .contentHead {
+    padding: 24px;
+    background-color: green;
+    border-radius: 10px 10px 0px 0px;
+}
+.box3 .contentHead {
+    padding: 24px;
+    background-color: #025529;
+    border-radius: 10px 10px 0px 0px;
+}
+.contentHead p{
+    font-size: 18px;
+    color: #fff;
+    margin: 0px;    
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+.contentBody {
+    padding: 22px 36px;
+    background-color: #F3F3F3;
+    font-weight: 500;
+    letter-spacing: .2px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.box1 .contentBody {
+    border-radius: 10px 0px 0px 10px !important;
+    background-color: #1D2F28;
+    font-weight: 400;
+}
+.box2 .contentBody {
+    border-radius: 0px 0px 10px 0px !important;
+}
+
+.contentBody p{
+    font-size: 18px;
+    color: #1D2F28;
+    margin: 0px;
+    padding: 18px 0px;
+}
+.box1 .contentBody p{
+    color: #fff;
+    border-bottom: unset;
+}
+.box1 .contentBody p:not(:nth-child(6)){
+    border-bottom : 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+.contentBody p{
+    border-bottom: unset;
+}
+.contentBody p:not(:nth-child(6)){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.contentBody .bold{
+    font-size: 18px;
+    font-weight: 700;
+}
+.contentBody .bold .star{
+    width: 12px;
+    margin-right: 4px;
+}
+.contentBody .icons{
+    width: 18px;
+}
+
+
+
+.mr20 {
+    margin-right: 20px;
+}
+.box1 .h15 {
+    justify-content: start;
+}
+.box1 .h30 {
+    justify-content: start;
+}
+.h15 {
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h30 {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

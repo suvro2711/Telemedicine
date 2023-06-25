@@ -1,0 +1,41 @@
+.Footer {
+    background-color: #F3F3F3;
+    width: 100vw;
+    margin-top: 3rem;
+    padding: 3rem 1rem;
+}
+.FooterTop {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+.FooterTop img {
+    width: 80px;
+    height: 80px;
+}
+.List {
+    display: flex;
+}
+.List p{
+    font-family : 'Lasiver-Medium';
+    font-size: 20px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+.FooterBottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #1d2f284d;
+    padding-top: 30px;
+}
+.FooterBottom p {
+    color: #1D2F28;
+    font-size: 15px;
+    margin: 0px;
+    cursor: pointer;
+    font-family: Helvetica Neue LT Pro;
+    letter-spacing: .2px;
+}
+.FooterBottom p span{
+    padding: 0px 15px;
+}

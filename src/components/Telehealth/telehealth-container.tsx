@@ -1,7 +1,7 @@
 import { FunctionComponent, memo, useMemo } from "react";
 import CSS, { Property } from "csstype";
 import styles from "./TelehealthContainer.module.css";
-import LogoLink from "./common/LogoLink/LogoLink";
+import LogoLink from "../common/LogoLink/LogoLink";
 
 type TelehealthContainerType = {
   publixBrandmarksvg?: string;
