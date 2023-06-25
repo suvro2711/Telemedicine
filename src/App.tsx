@@ -4,7 +4,6 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import MaskGroup from "./pages/MaskGroup";
 import LandingPage from "./pages/LandingPage";
 
 function App() {
