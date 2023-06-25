@@ -1,18 +1,17 @@
-.publixVsOthers {
+.titleSubWrapper {
   position: relative;
   line-height: 56px;
   display: inline-block;
   width: 583px;
 }
-.publixVsOthersWrapper {
-
+.title {
   width: 479px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
-.dolorEgestasUllamcorper {
+.subTitle {
   align-self: stretch;
   position: relative;
   font-size: 18px;
@@ -22,7 +21,7 @@
   height: 202px;
   flex-shrink: 0;
 }
-.frameGroup {
+.text {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -101,14 +100,14 @@
   line-height: 25px;
   font-weight: 500;
 }
-.controlPointBlack24dpIcon {
+.controlPointIcon {
   position: relative;
   width: 28px;
   height: 28px;
   overflow: hidden;
   flex-shrink: 0;
 }
-.controlPointBlack24dpWrapper {
+.controlPoint {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -124,8 +123,9 @@
   color: #1d2f28;
   font-family: Inter;
 }
+
 .frameDiv,
-.frameWrapper,
+.others,
 .parent {
   display: flex;
   flex-direction: column;
@@ -136,9 +136,10 @@
   justify-content: center;
   z-index: 0;
 }
-.frameWrapper {
+.others {
+  display: flex;
+  align-items: center;
   border-radius: 30px;
-  background-color: #f3f3f3;
   width: 292.8px;
   justify-content: flex-start;
   overflow-x: auto;
@@ -181,12 +182,12 @@
   font-size: 18px;
   font-family: Inter;
 }
-.groupDiv {
+.publix {
   width: 606.8px;
   height: 510px;
   margin-right: 1rem;
 }
-.frameContainer {
+.comparison {
   position: relative;
   width: 70%;
   height: 510px;
@@ -197,7 +198,7 @@
   display: flex;
   flex-direction: row-reverse;
 }
-.frameParent {
+.marketComparison {
   width:100%;
   margin-top: 4rem;
   display: flex;

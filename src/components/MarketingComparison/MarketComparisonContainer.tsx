@@ -2,203 +2,29 @@ import { FunctionComponent, memo, useMemo } from "react";
 import CSS, { Property } from "csstype";
 import styles from "./MarketComparisonContainer.module.css";
 
-type MarketComparisonContainerType = {
-  dolorEgestasUllamcorperNi?: string;
-  star1?: string;
-  star11?: string;
 
-  /** Style props */
-  othersDisplay?: Property.Display;
-  frame21BoxSizing?: Property.BoxSizing;
-  propDisplay?: Property.Display;
-  propDisplay1?: Property.Display;
-  appointmentNeededTakesHouDisplay?: Property.Display;
-  unreliableDisplay?: Property.Display;
-  fullPriceDisplay?: Property.Display;
-  publixDisplay?: Property.Display;
-  frame21BoxSizing1?: Property.BoxSizing;
-  propDisplay2?: Property.Display;
-  propDisplay3?: Property.Display;
-  onlineFormSubmissionTakesDisplay?: Property.Display;
-  openDisplay?: Property.Display;
-  upTo87DiscountDisplay?: Property.Display;
-  visitFeeDisplay?: Property.Display;
-  ratingDisplay?: Property.Display;
-  typeOfConsultationDisplay?: Property.Display;
-  weekendsNightsDisplay?: Property.Display;
-  refundableDisplay?: Property.Display;
-  mDCostDisplay?: Property.Display;
-};
-
-const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType> =
-  memo(
-    ({
-      dolorEgestasUllamcorperNi,
-      star1,
-      star11,
-      othersDisplay,
-      frame21BoxSizing,
-      propDisplay,
-      propDisplay1,
-      appointmentNeededTakesHouDisplay,
-      unreliableDisplay,
-      fullPriceDisplay,
-      publixDisplay,
-      frame21BoxSizing1,
-      propDisplay2,
-      propDisplay3,
-      onlineFormSubmissionTakesDisplay,
-      openDisplay,
-      upTo87DiscountDisplay,
-      visitFeeDisplay,
-      ratingDisplay,
-      typeOfConsultationDisplay,
-      weekendsNightsDisplay,
-      refundableDisplay,
-      mDCostDisplay,
-    }) => {
-      const othersStyle: CSS.Properties = useMemo(() => {
-        return {
-          display: othersDisplay,
-        };
-      }, [othersDisplay]);
-
-      const frameDiv1Style: CSS.Properties = useMemo(() => {
-        return {
-          boxSizing: frame21BoxSizing,
-        };
-      }, [frame21BoxSizing]);
-
-      const divStyle: CSS.Properties = useMemo(() => {
-        return {
-          display: propDisplay,
-        };
-      }, [propDisplay]);
-
-      const div1Style: CSS.Properties = useMemo(() => {
-        return {
-          display: propDisplay1,
-        };
-      }, [propDisplay1]);
-
-      const appointmentNeededTakesHourContainerStyle: CSS.Properties =
-        useMemo(() => {
-          return {
-            display: appointmentNeededTakesHouDisplay,
-          };
-        }, [appointmentNeededTakesHouDisplay]);
-
-      const unreliableStyle: CSS.Properties = useMemo(() => {
-        return {
-          display: unreliableDisplay,
-        };
-      }, [unreliableDisplay]);
-
-      const fullPriceStyle: CSS.Properties = useMemo(() => {
-        return {
-          display: fullPriceDisplay,
-        };
-      }, [fullPriceDisplay]);
-
-      const publixStyle: CSS.Properties = useMemo(() => {
-        return {
-          display: publixDisplay,
-        };
-      }, [publixDisplay]);
-
-      const frameDiv2Style: CSS.Properties = useMemo(() => {
-        return {
-          boxSizing: frame21BoxSizing1,
-        };
-      }, [frame21BoxSizing1]);
-
-      const div2Style: CSS.Properties = useMemo(() => {
-        return {
-          display: propDisplay2,
-        };
-      }, [propDisplay2]);
-
-      const div3Style: CSS.Properties = useMemo(() => {
-        return {
-          display: propDisplay3,
-        };
-      }, [propDisplay3]);
-
-      const onlineFormSubmissionTakesContainerStyle: CSS.Properties =
-        useMemo(() => {
-          return {
-            display: onlineFormSubmissionTakesDisplay,
-          };
-        }, [onlineFormSubmissionTakesDisplay]);
-
-      const openStyle: CSS.Properties = useMemo(() => {
-        return {
-          display: openDisplay,
-        };
-      }, [openDisplay]);
-
-      const upTo87Style: CSS.Properties = useMemo(() => {
-        return {
-          display: upTo87DiscountDisplay,
-        };
-      }, [upTo87DiscountDisplay]);
-
-      const visitFeeStyle: CSS.Properties = useMemo(() => {
-        return {
-          display: visitFeeDisplay,
-        };
-      }, [visitFeeDisplay]);
-
-      const ratingStyle: CSS.Properties = useMemo(() => {
-        return {
-          display: ratingDisplay,
-        };
-      }, [ratingDisplay]);
-
-      const typeOfConsultationStyle: CSS.Properties = useMemo(() => {
-        return {
-          display: typeOfConsultationDisplay,
-        };
-      }, [typeOfConsultationDisplay]);
-
-      const weekendsNightsStyle: CSS.Properties = useMemo(() => {
-        return {
-          display: weekendsNightsDisplay,
-        };
-      }, [weekendsNightsDisplay]);
-
-      const refundableStyle: CSS.Properties = useMemo(() => {
-        return {
-          display: refundableDisplay,
-        };
-      }, [refundableDisplay]);
-
-      const mDCostStyle: CSS.Properties = useMemo(() => {
-        return {
-          display: mDCostDisplay,
-        };
-      }, [mDCostDisplay]);
+const MarketComparisonSection: FunctionComponent =memo(() => {
 
       return (
-        <div className={styles.frameParent}>
-          <div className={styles.frameGroup}>
-            <div className={styles.publixVsOthersWrapper}>
-              <div className={styles.publixVsOthers}>Publix vs. Others</div>
+        <section className={styles.marketComparison}>
+          <div className={styles.text}>
+            <div className={styles.title}>
+              <div className={styles.titleSubWrapper}>Publix vs. Others</div>
             </div>
-            <div className={styles.dolorEgestasUllamcorper}>
-              {dolorEgestasUllamcorperNi}
+            <div className={styles.subTitle}>
+            "Don’t wait weeks for an appointment. Our doctors, therapists, and specialists can help you with the flu, infections, anxiety, stress, skin conditions, and provide advice on serious medical conditions. No matter what you're facing, we’re available from wherever you are by phone, video, or app."
             </div>
           </div>
-          <div className={styles.frameContainer}>
-            <div className={styles.frameWrapper}>
+          <div className={styles.comparison}>
+            <div className={styles.others}>
               <div className={styles.frameDiv}>
                 <div className={styles.othersWrapper}>
-                  <div className={styles.others} style={othersStyle}>
+                  <div className={styles.others} >
                     Others
                   </div>
                 </div>
-                <div className={styles.parent} style={frameDiv1Style}>
-                  <div className={styles.div} style={divStyle}>
+                <div className={styles.parent} >
+                  <div className={styles.div} >
                     <span className={styles.span}>$</span>
                     <span className={styles.span1}>{`80 - `}</span>
                     <span className={styles.span}>$</span>
@@ -211,8 +37,8 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                   />
                   <div className={styles.frameWrapper1}>
                     <div className={styles.starParent}>
-                      <img className={styles.frameItem} alt="" src={star1} />
-                      <div className={styles.div1} style={div1Style}>
+                      <img className={styles.frameItem} alt=""  src='/star-11.svg'/>
+                      <div className={styles.div1} >
                         3.5
                       </div>
                     </div>
@@ -224,7 +50,7 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                   />
                   <div
                     className={styles.appointmentNeededTakesHourContainer}
-                    style={appointmentNeededTakesHourContainerStyle}
+                    
                   >
                     <p className={styles.appointmentNeeded}>
                       Appointment needed,
@@ -238,7 +64,7 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                   />
                   <div
                     className={styles.appointmentNeededTakesHourContainer}
-                    style={unreliableStyle}
+                    
                   >
                     Unreliable
                   </div>
@@ -247,9 +73,9 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                     alt=""
                     src="/vector-5727.svg"
                   />
-                  <div className={styles.controlPointBlack24dpWrapper}>
+                  <div className={styles.controlPoint}>
                     <img
-                      className={styles.controlPointBlack24dpIcon}
+                      className={styles.controlPointIcon}
                       alt=""
                       src="/control-point-black-24dp.svg"
                     />
@@ -261,23 +87,23 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                   />
                   <div
                     className={styles.appointmentNeededTakesHourContainer}
-                    style={fullPriceStyle}
+                   
                   >
                     Full Price
                   </div>
                 </div>
               </div>
             </div>
-            <div className={styles.groupDiv}>
+            <div className={styles.publix}>
               <div className={styles.frameWrapper2}>
                 <div className={styles.frameDiv}>
                   <div className={styles.publixWrapper}>
-                    <div className={styles.others} style={publixStyle}>
+                    <div className={styles.others} >
                       Publix
                     </div>
                   </div>
-                  <div className={styles.parent} style={frameDiv2Style}>
-                    <div className={styles.div} style={div2Style}>
+                  <div className={styles.parent}>
+                    <div className={styles.div} >
                       <span className={styles.span}>$</span>
                       <span className={styles.span1}>40</span>
                     </div>
@@ -288,8 +114,8 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                     />
                     <div className={styles.frameWrapper1}>
                       <div className={styles.starParent}>
-                        <img className={styles.frameItem} alt="" src={star11} />
-                        <div className={styles.div1} style={div3Style}>
+                        <img className={styles.frameItem} alt="" src={'/star-11.svg'} />
+                        <div className={styles.div1}>
                           4.9
                         </div>
                       </div>
@@ -301,7 +127,6 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                     />
                     <div
                       className={styles.appointmentNeededTakesHourContainer}
-                      style={onlineFormSubmissionTakesContainerStyle}
                     >
                       <p className={styles.appointmentNeeded}>
                         Online form submission,
@@ -315,7 +140,6 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                     />
                     <div
                       className={styles.appointmentNeededTakesHourContainer}
-                      style={openStyle}
                     >
                       Open
                     </div>
@@ -324,9 +148,9 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                       alt=""
                       src="/vector-5727.svg"
                     />
-                    <div className={styles.controlPointBlack24dpWrapper}>
+                    <div className={styles.controlPoint}>
                       <img
-                        className={styles.controlPointBlack24dpIcon}
+                        className={styles.controlPointIcon}
                         alt=""
                         src="/task-alt-black-24dp.svg"
                       />
@@ -338,7 +162,6 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                     />
                     <div
                       className={styles.appointmentNeededTakesHourContainer}
-                      style={upTo87Style}
                     >
                       Up to 87% discount
                     </div>
@@ -348,7 +171,6 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
               <div className={styles.visitFeeParent}>
                 <div
                   className={styles.appointmentNeededTakesHourContainer}
-                  style={visitFeeStyle}
                 >
                   Visit Fee
                 </div>
@@ -359,7 +181,6 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                 />
                 <div
                   className={styles.appointmentNeededTakesHourContainer}
-                  style={ratingStyle}
                 >
                   Rating
                 </div>
@@ -370,7 +191,6 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                 />
                 <div
                   className={styles.appointmentNeededTakesHourContainer}
-                  style={typeOfConsultationStyle}
                 >
                   Type of Consultation
                 </div>
@@ -381,7 +201,6 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                 />
                 <div
                   className={styles.appointmentNeededTakesHourContainer}
-                  style={weekendsNightsStyle}
                 >{`Weekends & Nights`}</div>
                 <img
                   className={styles.frameChild}
@@ -390,7 +209,6 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                 />
                 <div
                   className={styles.appointmentNeededTakesHourContainer}
-                  style={refundableStyle}
                 >
                   Refundable?
                 </div>
@@ -401,16 +219,15 @@ const MarketComparisonContainer: FunctionComponent<MarketComparisonContainerType
                 />
                 <div
                   className={styles.appointmentNeededTakesHourContainer}
-                  style={mDCostStyle}
                 >
                   MD Cost
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       );
     }
   );
 
-export default MarketComparisonContainer;
+export default MarketComparisonSection;
